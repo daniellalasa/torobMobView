@@ -19,7 +19,7 @@ Product page
 
 5- "Offer label" is a svg element .
 
-6- If you click on "مشاهده بقیه فروشنده ها" button the second panel will collapse down and other sellers elements will apear.
+6- If you click on "مشاهده بقیه فروشنده ها" button the second panel will collapse down and other sellers elements will 			appear.
    	And if you click on the button again , the panel will collapse up .
 
 
