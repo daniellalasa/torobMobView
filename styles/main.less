@@ -1,0 +1,261 @@
+/* * * * * * * * * * * * * * * * * * */
+/*									 */
+/*    		   Main.less	         */
+/*   	   BY Daniel Lalasa	    	 */
+/*									 */
+/* * * * * * * * * * * * * * * * * * */
+
+
+/* * * * * * * Variables * * * * * * */
+@color_1: gray;
+@color_2: darkred;
+@color_3: darkblue;
+@color_4: black;
+@font-family_1: tahoma;
+@font-family_2: 'yekan';
+
+/* * * * * * Mixins * * * * * */
+.link {
+	color: @color_1;
+	text-decoration: none;
+}
+/* * * * * * General Styles * * * * * */
+@font-face {
+	font-family: @font-family_2;
+	src: url(../assets/fonts/Yekan.eot);
+	src: url(../assets/fonts/Yekan.eot?#iefix) format("embedded-opentype"), url(../assets/fonts/Yekan.woff) format("woff"), url(../assets/fonts/Yekan.ttf) format("truetype"), url(../assets/fonts/Yekan.svg#BYekan) format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+body {
+	direction: rtl;
+	font-family: @font-family_1;
+	background-color: #F0F0F0;
+	font-family: @font-family_2;
+}
+.container {
+	width: 100%;
+}
+
+/* * * * * * Panels Styles * * * * * */
+
+.panel {
+	border-radius: 0 !important;
+	box-shadow: 1px 5px 15px lightgray;
+	text-align: right;
+	height: 40%;
+}
+
+
+/* * * * * * First Panel Buttons * * * * * */
+
+.prod-buts {
+	i {
+		font-size: 60px;
+		cursor: pointer;
+		color: @color_1;
+	}
+	text-align: center !important;
+	direction: rtl;
+	.but {
+		&:hover {
+			color: @color_2;
+		}
+	}
+}
+
+
+/* * * * * * Second panel * * * * * */
+.prods {
+	margin-top: 20%;
+	.prod-info {
+		color: @color_1;
+	}
+}
+
+
+/* * * * * * Sellers List Styles * * * * * */
+
+.list {
+	margin-top: 2%;
+	padding-top: 2%;
+	position: relative;
+
+	
+	/* * * * * * Seller Picture * * * * * */
+
+	.image {
+		img {
+			width: 80%;
+			max-width: 100%;
+			margin-top: 5%;
+		}
+		padding-right: 0%;
+		position: relative;
+		right: 0;
+		top: 0;
+		float: right;
+	}
+	#second{
+		padding: 0 !important;
+	}
+
+	/* * * * * * Each Seller Detail * * * * * */
+
+	.detail {
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: block;
+		position: relative;
+		padding-bottom: 2%;
+		border-bottom: 1px solid lightgray;
+		height: 100%;
+		float: left;
+		width: 80%;
+		margin-right: -10%;
+	}
+
+	/* * * * * * Show More Sellers Button * * * * * */
+
+	.more {
+		background-color: white;
+		border-top: 1px solid lightgray;
+		bottom: 0;
+		color: @color_1;
+		cursor: pointer;
+		display: inline-block;
+		left: 0;
+		margin-top: -3%;
+		position: relative;
+		right: 0;
+		text-align: center;
+		width: 100%;
+		z-index: 999;
+		i {
+			h5 {
+				display: inline-block;
+			}
+		}
+		h2{
+			margin-bottom: 20px;
+		}
+		a{	
+			.link;			
+		}
+	}
+
+	/* * * * * * Seller Title  * * * * * */
+
+	.title {
+		color: @color_3;
+	}
+
+	/* * * * * * Seller Body * * * * * */
+
+	.body {
+		color: @color_1;
+		margin-top: 5%;
+		margin-bottom: 3%;
+		font-size: 25px;
+	}
+
+	/* * * * * * Seller Price * * * * * */
+
+	.price {
+		color: @color_2;
+		display: inline-block;
+	
+		.oldPrice{
+			opacity: 0.5;
+			text-decoration: line-through;
+			color: @color_2;
+			float: left;
+
+		}
+		.newPrice{
+			float: right;
+
+		}
+		.bullet{
+			color: gray;
+		    display: inline-block;
+		    font-size: 50px;
+		    font-weight: bolder;
+		    margin-top: 0;
+		}
+	}
+
+	/* * * * * * Each Seller * * * * * */
+
+	.item {
+		height: 50%;
+		display: inline-block;
+		position: relative;
+		width: 100%;
+		left:0;
+		z-index: 990
+	}
+
+
+	/* * * * * * Offer Box * * * * * */
+
+	#offer {
+		color: white;
+	    display: block;
+	    float: left;
+	    font-size: 250%;
+	    margin-left: -4%;
+	    position: relative;
+	    margin-top: -10.8%;
+	    transform: rotate(-45deg);
+	}
+}
+
+
+/* * * * * * Search Styles * * * * * */
+
+#search {
+	background-color: white;
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+	box-shadow: 4px 5px 10px lightgray;
+	border-radius: 0;
+	display: inline-block;
+
+
+	/* * * * * * Top Logo * * * * * */
+
+	img {
+		width: 13%;
+		margin-right: 1%;
+	}
+
+
+	a.fa-search {
+		position: relative;
+		vertical-align: middle;
+		font-size: 450%;
+		margin-right:75%;
+		cursor: pointer;
+		.link;
+
+	}
+	#searFiel {
+		position: absolute;
+		height: 100%;
+		font-size: 300%;
+		border: 0 !important;
+		top: 0;
+		right: 12%;
+		line-height: 180%;
+		padding-left:30%;
+	}
+	a {
+		color: @color_4;
+		font-size: 300%;
+	}
+}

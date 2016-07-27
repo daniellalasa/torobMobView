@@ -1,0 +1,66 @@
+/* * * * * * * * * * * * * * * * * * */
+/*                                   */
+/*           Slider.less             */
+/*        BY Daniel Lalasa           */
+/*                                   */
+/* * * * * * * * * * * * * * * * * * */
+
+
+
+/* * * * * * * Variables * * * * * * */
+@color_1: black;
+
+/* * * * * * Carousel * * * * * */
+.media-carousel {
+
+  margin-bottom: 0;
+
+  /* * * * * * Previous button  * * * * * */
+  .carousel-control.left {
+    left: -12px !important;
+    background-image: none;
+    height: 100%;
+    width: 40px;
+    padding-top: 11%;
+    color: @color_1;
+    z-index: 100;
+  }
+
+  /* * * * * * Next button  * * * * * */
+  .carousel-control.right {
+    right: -12px !important;
+    background-image: none;
+    height: 100%;
+    width: 40px;
+    padding-top: 11%;
+    color: @color_1;
+    font-size: 30px;
+    z-index: 100;
+  }
+
+  /* * * * * * Changes the position of the indicators * * * * * */
+  .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+
+    /* * * * * * Changes the colour of the indicators * * * * * */
+    li {
+      background: #c0c0c0;
+    }
+    .active {
+      background: #333333;
+    }
+  }
+  img {
+    width: 250px;
+    height: auto;
+  }
+}
+.carousel-inner {
+  padding: 0 15px 0 15px;
+}
+
+/* * * * * * End carousel * * * * * */
+
